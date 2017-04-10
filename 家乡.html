@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <!-- 使用下面这段代码使用的是Edge 。模式Edge 模式告诉 IE 以最高级模式渲染文档，也就是任何 IE 版本都以当前版本所支持的最高级标准模式渲染，避免版本升级造成的影响。简单的说，就是什么版本 IE 就用什么版本的标准模式渲染。 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-content,initial-scale=1">
+	<title>家乡</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!-- 响应式页面的设计思想：在head中添加 
+将所有的固定宽度值，全部修改为相对宽度：width:100%;
+给（按钮）a标签添加：padding:1.5em;(即内边距的大小等于a标签字体大小的1.5倍) -->
+</head>
+<body>
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/city.png" alt="iconic view of a cityscape">
+        <h1 class="header__title">
+          The Brighton Times
+        </h1>
+      </div>
+    </header>
+    <nav class="nav" id="drawer">
+    	<ul class="nav__list">
+    		<li class="nav__item"><a href="#">news</a></li>
+    		<li class="nav__item"><a href="#">events</a></li>
+    		<li class="nav__item"><a href="#">culture</a></li>
+    		<li class="nav__item"><a href="#">blog</a></li>
+    	</ul>
+    </nav>
+    <div class="main">
+    	<section class="content">
+    		<section class="hero">
+    			<article class="description">
+    				<h2>Absolutely astonishing breaking news!</h2>
+    				<p>Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko. Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko.</p>
+    			</article>
+    		</section><!--图片结束-->
+    		<section class="news top-news">
+    			<h2 class="news__title">
+    			Top news
+                <a href="#" class="news__more">+more</a>
+    			</h2>
+    			<ul>
+    				<li class="top-news__item"><a href="#">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.</a></li>
+    				<li class="top-news__item"><a href="#">Squid lomo Kickstarter art lomo Kickstarter art party cronut scenester.</a></li>
+    				<li class="top-news__item"><a href="#">Organic raw denim lomo Kickstarter art Vice keffiyeh four loko.</a></li>
+    				<li class="top-news__item"><a href="#">Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko.</a></li>
+    			</ul>
+    		</section><!--列表结束-->
+    		<section class="scores">
+    			<table class="scores__table">
+    				<thead>
+    					<tr>
+    						<th>date</th>
+    						<th>team</th>
+    						<th colspan="2">score</th>
+    						<th>team</th>
+    					</tr>
+    				</thead>
+    				<tbody>
+    					<tr>
+    						<td>Friday</td>
+    						<td>Bears</td>
+    						<td>95</td>
+    						<td class="winner">109</td>
+    						<td class="winner">cubs</td>
+    					</tr>
+    					<tr>
+    						<td>Friday</td>
+    						<td class="winner">Otters</td>
+    						<td class="winner">3</td>
+    						<td>1</td>
+    						<td>cubs</td>
+    					</tr>
+    					<tr>
+    						<td>Saturday</td>
+    						<td class="winner">Wears</td>
+    						<td class="winner">7</td>
+    						<td>0</td>
+    						<td>club</td>
+    					</tr>
+    					<tr>
+    						<td>Friday</td>
+    						<td>Bears</td>
+    						<td>95</td>
+    						<td class="winner">109</td>
+    						<td class="winner">club</td>
+    					</tr>
+    					<tr>
+    						<td>Sunday</td>
+    						<td>Sears</td>
+    						<td class="winner">6</td>
+    						<td>2</td>
+    						<td class="winner">Foxs</td>
+    					</tr>
+    				</tbody>
+    			</table>
+    		</section><!--scores结束-->
+    		<section class="weather">
+    			<span class="weather__location">Brighton, UK</span>
+    			<span class="weather__desc">sunday</span>
+    			<span class="weather__today">
+    				<img class="weather__today__image" src="images/weather.png" alt="sunday">
+    				<span class="weather__today__temp">13</span>
+    				<span class="weather__today__deg">°C</span>
+    			</span>
+    			<ul class="weather__next">
+    				<li class="weather__next__item">
+    					<span>Mon</span>
+    					<img class="weather__next__image" src="images/sunny.png" alt="sunny">
+    					<span>13°C</span>
+    				</li>
+    				<li class="weather__next__item">
+    					<span>Mon</span>
+    					<img class="weather__next__image" src="images/cloudy.png" alt="sunny">
+    					<span>12°C</span>
+    				</li>
+    				<li class="weather__next__item">
+    					<span>Mon</span>
+    					<img class="weather__next__image" src="images/sunny.png" alt="sunny">
+    					<span>13°C</span>
+    				</li>
+    				<li class="weather__next__item">
+    					<span>Mon</span>
+    					<img class="weather__next__image" src="images/rain.png" alt="sunny">
+    					<span>10°C</span>
+    				</li>
+    				<li class="weather__next__item">
+    					<span>Mon</span>
+    					<img class="weather__next__image" src="images/sunny.png" alt="sunny">
+    					<span>13°C</span>
+    				</li>
+    			</ul>
+    		</section><!--weather结束-->
+    		<section class="news recent-news">
+    			<h2 class="news__title">Latest news</h2>
+    			<ul>
+    				<li class="snippet">
+    					<img class="snippet__thumbnail" src="images/dog.jpg" alt="dog">
+    					<h3 class="snippet__title"><a href="#">Gastropub distillery Marfa farm-to-table</a></h3>
+    					<p>
+    						Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.
+    					</p>
+    				</li>
+    				<li class="snippet">
+    					<img class="snippet__thumbnail" src="images/dog.jpg" alt="dog">
+    					<h3 class="snippet__title"><a href="#">Gastropub distillery Marfa farm-to-table</a></h3>
+    					<p>
+    						Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.
+    					</p>
+    				</li>
+    				<li class="snippet">
+    					<img class="snippet__thumbnail" src="images/dog.jpg" alt="dog">
+    					<h3 class="snippet__title"><a href="#">Gastropub distillery Marfa farm-to-table</a></h3>
+    					<p>
+    						Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.
+    					</p>
+    				</li>
+    				<li class="snippet">
+    					<img class="snippet__thumbnail" src="images/dog.jpg" alt="dog">
+    					<h3 class="snippet__title"><a href="#">Gastropub distillery Marfa farm-to-table</a></h3>
+    					<p>
+    						Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.
+    					</p>
+    				</li>
+    			</ul>
+    		</section><!--latest news结束-->
+    	</section><!--content结束-->
+    	<footer>
+    		<ul>
+    			<li><a href="#">Contact us</a></li>
+    			<li><a href="#">Follow us on Twitter</a></li>
+    			<li><a href="#">RSS</a></li>
+    		</ul>
+    	</footer>
+    </div>
+</body>
+</html>
